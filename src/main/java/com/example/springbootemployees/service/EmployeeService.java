@@ -3,6 +3,7 @@ package com.example.springbootemployees.service;
 import com.example.springbootemployees.exception.ResourceNotFoundException;
 import com.example.springbootemployees.model.Employee;
 import com.example.springbootemployees.repository.EmployeeRepository;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -12,6 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 @Service
+@AllArgsConstructor
 public class EmployeeService {
     @Autowired
     private EmployeeRepository employeeRepository;
